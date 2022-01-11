@@ -1,0 +1,124 @@
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.exe
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.deps.json
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.runtimeconfig.json
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.runtimeconfig.dev.json
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.pdb
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\dotnet-ef.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Npgsql.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.csprojAssemblyReference.cache
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\staticwebassets\ContactApplication.StaticWebAssets.Manifest.cache
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\staticwebassets\ContactApplication.StaticWebAssets.xml
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.csproj.CoreCompileInputs.cache
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.AssemblyInfoInputs.cache
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.AssemblyInfo.cs
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.RazorTargetAssemblyInfo.cache
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.csproj.CopyComplete
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.dll
+C:\Users\PKONAM\Documents\ContactApplicationNew\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.pdb
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.csprojAssemblyReference.cache
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\staticwebassets\ContactApplication.StaticWebAssets.Manifest.cache
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\staticwebassets\ContactApplication.StaticWebAssets.xml
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.csproj.CoreCompileInputs.cache
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.AssemblyInfoInputs.cache
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.AssemblyInfo.cs
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.pdb
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.exe
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.deps.json
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.runtimeconfig.json
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.runtimeconfig.dev.json
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\ContactApplication.pdb
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\dotnet-ef.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Npgsql.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.RazorTargetAssemblyInfo.cache
+C:\Users\PKONAM\Documents\ContactApplication New\ContactApplication\obj\Debug\netcoreapp3.0\ContactApplication.csproj.CopyComplete
