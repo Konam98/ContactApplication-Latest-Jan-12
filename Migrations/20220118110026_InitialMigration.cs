@@ -13,10 +13,11 @@ namespace ContactApplication.Migrations
                 {
                     ContactId = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ContactFname = table.Column<string>(nullable: true),
+                    ContactName = table.Column<string>(nullable: true),
                     ContactNumber = table.Column<long>(nullable: false),
                     ContactEmail = table.Column<string>(nullable: true),
-                    ContactAddress = table.Column<string>(nullable: true)
+                    ContactAddress = table.Column<string>(nullable: true),
+                    UserId = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,10 +30,13 @@ namespace ContactApplication.Migrations
                 {
                     UserId = table.Column<long>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    MobileNumber = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(nullable: false),
+                    LastName = table.Column<string>(nullable: false),
+                    Role = table.Column<string>(nullable: true),
+                    userQuestion = table.Column<string>(nullable: false),
+                    userAnswer = table.Column<string>(nullable: false),
+                    MobileNumber = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
                     Password = table.Column<string>(nullable: false),
                     ConfirmPassword = table.Column<string>(nullable: false)
                 },

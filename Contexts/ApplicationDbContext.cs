@@ -18,11 +18,12 @@ namespace ContactApplication.Contexts
         // }
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
        {
-        optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=ContactApplication1;Username=postgres;Password=Maycg1805$");
+       // optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=ContactApplication2;Username=postgres;Password=Maycg1805$");
        }
 
         public virtual DbSet<Contact> Contacts { get; set; }   
         public virtual DbSet<User> User {get;set;}
+        
 
     }
 }

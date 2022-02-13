@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using ContactApplication.Contexts;
 using ContactApplication.Entities;
 using System.Linq;
-
+using ContactApplication.DTO;
 
 namespace ContactApplication.Repositories
 {
@@ -22,41 +22,73 @@ namespace ContactApplication.Repositories
         public AccountRepository(ApplicationDbContext context)
         {
             this.context = context;
-        }
-         public User validateUser(LoginModel login)
+        }            
+        
+
+        //Forgot Password method for User
+        public FeedBack ForgetPassword(string Email, ForgetPasswordDTO forgetPasswordDTO)
         {
-            return context.User.SingleOrDefault(u => u.Email == login.Email && u.Password == login.Password);
-        }
-public FeedBack addUser(User user, Role role)
-        {
-            FeedBack feedback = null;
-            try
+            User user1 = context.User.SingleOrDefault(s => s.Email == Email);
+            if (user1 != null)
             {
-                //Check if Farmer already exists by matching Email
-                User user1 = context.User.SingleOrDefault(s => s.Email == user.Email);
-                if (user1 == null)
+                if (forgetPasswordDTO.answer == user1.userAnswer)
                 {
-                    //Add Farmers
-                    user.Role = role.ToString();
-                    context.User.Add(user);
+                    user1.Password = forgetPasswordDTO.newPassword;
+                    context.User.Update(user1);
                     context.SaveChanges();
-                    feedback = new FeedBack() { Result = true, Message = "User Added" };
+                    FeedBack feedback = new FeedBack { Result = true, Message = "Password has been reset!" };
+                    return feedback;
                 }
                 else
                 {
-                    feedback = new FeedBack() { Result = false, Message = "User with same EmailID already exists" };
+                    FeedBack feedback = new FeedBack { Result = false, Message = "Incorrect Answer!" };
+                    return feedback;
+                }
+            }
+            else
+            {
+                FeedBack feedback = new FeedBack { Result = false, Message = "User Email not registered!" };
+                return feedback;
+            }
+        }
 
+         public User ValidateUser(LoginModel login)
+        {
+            return context.User.SingleOrDefault(u => u.Email == login.Email && u.Password == login.Password);
+        }
+        public FeedBack AddUser(User user, Role role)
+        {
+            
+            try
+            {
+                //Check if User already exists by matching Email
+                User user1 = context.User.SingleOrDefault(s => s.Email == user.Email);
+                if (user1 == null)
+                {
+                    //Add User
+                    user.Role = role.ToString();
+                    context.User.Add(user);
+                    context.SaveChanges();
+                    var feedback = new FeedBack() { Result = true, Message = "User Added" };
+                    return feedback;
+                }
+                else
+                {
+                   var feedback = new FeedBack() { Result = false, Message = "User with same EmailID already exists" };
+                    return feedback;
                 }
 
             }
             catch (Exception ex)
             {
-                feedback = new FeedBack() { Result = false, Message = ex.Message };
-
+                var feedback = new FeedBack() { Result = false, Message = ex.Message };
+                return feedback;
             }
-            return feedback;
-        }
+            
+        }         
+        
 
-
-     }
+        
+    }
 }
+

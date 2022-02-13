@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.Http;
 namespace ContactApplication.Models
 
 {
+   // [Table]
     public class Contact
     {
         [Key]
-
         public int ContactId { get; set; }
 
         public string ContactName { get; set; }       
@@ -24,6 +24,11 @@ namespace ContactApplication.Models
         // public string ProfileImageName { get; set; }
         // [NotMapped]
         // public IFormFile ProfileImageFile { get; set; }
+         
+
+         [ForeignKey("UserId")]
+         public long UserId{get;set;}
+
 
  
 

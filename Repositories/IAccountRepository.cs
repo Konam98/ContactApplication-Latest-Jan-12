@@ -2,7 +2,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using ContactApplication.Models;
 using ContactApplication.Entities;
-
+using ContactApplication.DTO;
+using System.Collections.Generic;
 
 namespace ContactApplication.Repositories
 {
@@ -10,8 +11,12 @@ namespace ContactApplication.Repositories
     {
         //Task<IdentityResult> SignUp(SignUp signUpModel);
        
-         User validateUser(LoginModel login);
-        FeedBack addUser(User user, Role role);
+        User ValidateUser(LoginModel login);
+        FeedBack AddUser(User user, Role role);
+        
+        //Forgot Password method for user
+        FeedBack ForgetPassword(string Email, ForgetPasswordDTO forgetPasswordDTO);
+
 
     }
 }

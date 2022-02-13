@@ -30,15 +30,19 @@ namespace ContactApplication.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("MobileNumber")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
@@ -46,6 +50,14 @@ namespace ContactApplication.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Role")
+                        .HasColumnType("text");
+
+                    b.Property<string>("userAnswer")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("userQuestion")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("UserId");
@@ -70,6 +82,9 @@ namespace ContactApplication.Migrations
                         .HasColumnType("text");
 
                     b.Property<long>("ContactNumber")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("UserId")
                         .HasColumnType("bigint");
 
                     b.HasKey("ContactId");

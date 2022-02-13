@@ -1,21 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using ContactApplication.Contexts;
 using ContactApplication.Repositories;
-using ContactApplication.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -34,19 +26,20 @@ namespace ContactApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+                 //Enable CORS
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
+                 .AllowAnyHeader());
+            });
+
             services.AddControllers();
+            services.AddDbContext<ApplicationDbContext>(option => option.UseNpgsql(Configuration.GetConnectionString("Conn")));
+            services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<IContactRepository, ContactRepository>();
 
-            // nugets needed "swashbuckle.aspnetcore" and "componentmodel.annontations"
-            // services.AddSwaggerGen(c =>
-            // {
-            //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact Application API", Version = "v1" });
-            // });
-
-            services.AddDbContext<ApplicationDbContext>(options =>
-          options.UseNpgsql(Configuration.GetConnectionString("Conn")));
-
-              services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme) 
+            .AddJwtBearer(options =>
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
@@ -56,9 +49,9 @@ namespace ContactApplication
                         ValidateAudience = false
                     };
                 });
-            services.AddSwaggerGen(c =>
+                services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact Application Web Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact Application Web API", Version = "v1" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
                     Name = "Authorization",
@@ -82,39 +75,39 @@ namespace ContactApplication
                             Array.Empty<string>()
 
                     }
-                }); 
-            });         
-
-           // services.AddScoped<IContactRepository, ContactRepository>();
-            services.AddTransient<IAccountRepository, AccountRepository>();
-
+                });
+            });
         }
-        
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            //     app.UseSwagger();
+            //     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Contact Application"));
+            // 
             }
-
-            app.UseHttpsRedirection();
-
             app.UseSwagger();
-            app.UseSwaggerUI(c =>
+            app.UseSwaggerUI(c => 
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Contact Application API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Contact Application");
             });
+           
 
-            app.UseRouting();
-            app.UseAuthorization();
-            app.UseAuthentication();
-
+             app.UseCors(x => x
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+            
+            app.UseRouting();   
+            app.UseAuthentication();         
+            app.UseAuthorization();            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
         }
+
     }
 }

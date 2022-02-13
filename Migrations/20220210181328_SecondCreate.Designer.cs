@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ContactApplication.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220111160926_SecondMigration")]
-    partial class SecondMigration
+    [Migration("20220210181328_SecondCreate")]
+    partial class SecondCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,15 +32,19 @@ namespace ContactApplication.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("MobileNumber")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
@@ -48,6 +52,14 @@ namespace ContactApplication.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Role")
+                        .HasColumnType("text");
+
+                    b.Property<string>("userAnswer")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("userQuestion")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("UserId");
@@ -68,10 +80,13 @@ namespace ContactApplication.Migrations
                     b.Property<string>("ContactEmail")
                         .HasColumnType("text");
 
-                    b.Property<string>("ContactFname")
+                    b.Property<string>("ContactName")
                         .HasColumnType("text");
 
                     b.Property<long>("ContactNumber")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("UserId")
                         .HasColumnType("bigint");
 
                     b.HasKey("ContactId");

@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PKONAM\\Documents\\ContactApplication New\\ContactApplication\\ContactApplication.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Documents\\GitRepo\\ContactApplication\\ContactApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PKONAM\\Documents\\ContactApplication New\\ContactApplication\\ContactApplication.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Documents\\GitRepo\\ContactApplication\\ContactApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PKONAM\\Documents\\ContactApplication New\\ContactApplication\\ContactApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Documents\\GitRepo\\ContactApplication\\ContactApplication.csproj",
         "projectName": "ContactApplication",
-        "projectPath": "C:\\Users\\PKONAM\\Documents\\ContactApplication New\\ContactApplication\\ContactApplication.csproj",
-        "packagesPath": "C:\\Users\\PKONAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PKONAM\\Documents\\ContactApplication New\\ContactApplication\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\GitRepo\\ContactApplication\\ContactApplication.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Documents\\GitRepo\\ContactApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PKONAM\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
             "projectReferences": {}
           }
         },
@@ -35,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -55,13 +59,6 @@
             "Microsoft.EntityFrameworkCore.Tools.DotNet": {
               "target": "Package",
               "version": "[2.1.0-preview1-final, )"
-            },
-            "Microsoft.NETCore.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview7-27912-14, )",
-              "autoReferenced": true
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -86,6 +83,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -93,7 +108,8 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
-          }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

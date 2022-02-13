@@ -11,32 +11,38 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using ContactApplication.DTO;
+using ContactApplication.Entities;
 
 namespace ContactApplication.Repositories
 {
-    public class ContactRepository
+    public class ContactRepository:IContactRepository
     {        
         private ApplicationDbContext context;
         public ContactRepository(ApplicationDbContext context)
         {
             this.context = context;
         }
+        public User ValidateUser(LoginModel login)
+        {
+            return context.User.SingleOrDefault(u => u.Email == login.Email && u.Password == login.Password);
+        }
         public List<Contact> GetContacts()
         {
-            try
+             try
             {
-                List<Contact> contacts = context.Contacts.FromSqlRaw("sp_GetContacts").ToList(); //implemented stored procedure
+                List<Contact> contacts = context.Contacts.ToList(); 
                 return contacts;
             }
             catch (Exception)
             {
                 return null;
-            }
-        }
-         public ContactDTO GetContactById(int ContactId)
+            }    
+                
+        }       
+        public ContactDTO GetContactById(int ContactId)
         {    
             Contact contact = context.Contacts.SingleOrDefault(s => s.ContactId == ContactId);                        
-                //Check if Customer already exists by matching Email & ElectricityBoardId
+                //Check if Contact already exists by matching Contact ID 
                 if (contact != null)
                 {
                 ContactDTO contactDTO=new ContactDTO();
@@ -54,67 +60,80 @@ namespace ContactApplication.Repositories
                                
         }
       
-        public FeedBack AddContact(Contact contact)
+        public FeedBack AddContact( Contact contact)
         {
-            FeedBack feedback = null;
+           
             try
             {
-                //Check if Customer already exists by matching Email & ElectricityBoardId
+                //Check if User already exists by matching contactNumber
                 Contact contact1 = context.Contacts.SingleOrDefault(s => s.ContactNumber == contact.ContactNumber);
                 if (contact1 == null)
-                {
-                    //Add Supplier
-                    //supplier.Role = role.ToString();
+                {                                        
                     context.Contacts.Add(contact);
                     context.SaveChanges();
-                    feedback = new FeedBack() { Result = true, Message = "Contact Added" };
+                   var feedback = new FeedBack() { Result = true, Message = "Contact Added" };
+                   return feedback;
                 }
                 else
                 {
-                    feedback = new FeedBack() { Result = false, Message = "Contact is already exists" };
+                   var feedback = new FeedBack() { Result = false, Message = "Contact is already exists" };
+                   return feedback;
 
                 }
 
             }
             catch (Exception ex)
             {
-                feedback = new FeedBack() { Result = false, Message = ex.Message };
+                var feedback = new FeedBack() { Result = false, Message = ex.Message }; 
+                return feedback;
+                         
 
             }
-            return feedback;
+            
         }
         
-        public FeedBack UpdateContactByContactId(int ContactId)
+        public FeedBack UpdateContactByContactId(int ContactId,ContactDTO contactDTO )
         {
-            FeedBack feedback = null;
+         
             try
             {
-                //Check if Customer already exists by matching Email & ElectricityBoardId
+                //Check if User already exists by matching Email & ElectricityBoardId
                 Contact contact1 = context.Contacts.SingleOrDefault(s => s.ContactId == ContactId);
                 if (contact1 != null)
                 {
-                    //Add Supplier
-                    //supplier.Role = role.ToString();
+                   // ContactDTO contactDTO=new ContactDTO();
+                    //contact1.ContactId=contactDTO.ContactId;
+                    contact1.ContactName=contactDTO.ContactName;
+                    contact1.ContactEmail=contactDTO.ContactEmail;
+                    contact1.ContactAddress=contactDTO.ContactAddress;
+                    contact1.ContactNumber=contactDTO.ContactNumber;
+                                        
                     context.Contacts.Update(contact1);
                     context.SaveChanges();
-                    feedback = new FeedBack() { Result = true, Message = "Contact Updated" };
+                   var feedback = new FeedBack() { Result = true, Message = "Contact Updated" };
+                    return feedback;  
                 }
                 else
                 {
-                    feedback = new FeedBack() { Result = false, Message = "Contact is not found" };
-
+                      var feedback = new FeedBack() { Result = false, Message = "Contact is not found" };
+                         return feedback;  
                 }
 
             }
             catch (Exception ex)
             {
-                feedback = new FeedBack() { Result = false, Message = ex.Message };
-
-            }
-            return feedback;
+                  var feedback = new FeedBack() { Result = false, Message = ex.Message }; 
+                       return feedback;             
+                   
+            }     
+                 
+                       
+            
+           
         }
         
-        //Method for Deleting Crop Details from database
+        
+        //Method for Deleting Contact Details from database
         public FeedBack DeleteContactById(int ContactId)
         {
             FeedBack feedback = null;
@@ -140,6 +159,54 @@ namespace ContactApplication.Repositories
 
             }
             return feedback;
+        }
+        public FeedBack ChangePassword(string Email, ChangePasswordDTO changePasswordDTO)
+        {
+            User user1 = context.User.SingleOrDefault(s => s.Email == Email);
+            if (user1 != null)
+            {
+                if (changePasswordDTO.oldPassword == user1.Password)
+                {
+                    user1.Password = changePasswordDTO.newPassword;
+                    context.User.Update(user1);
+                    context.SaveChanges();
+                    FeedBack feedback = new FeedBack { Result = true, Message = "Password Changed" };
+                    return feedback;
+                }
+                else
+                {
+                    FeedBack feedback = new FeedBack { Result = false, Message = "Incorrect Password" };
+                    return feedback;
+                }
+            }
+            else
+            {
+                FeedBack feedback = new FeedBack { Result = false, Message = "User Email not registered!" };
+                return feedback;
+            }
+        }
+        public UserDTO GetUserDetails(string Email,string Password)
+        {    
+            User user = context.User.SingleOrDefault(s => s.Email == Email&& s.Password==Password);                        
+                //Check if Contact already exists by matching Contact ID 
+                if (user != null)
+                {
+                UserDTO userDTO=new UserDTO();
+                userDTO.UserId=user.UserId;
+                userDTO.FirstName=user.FirstName;
+                userDTO.LastName=user.LastName;
+                userDTO.Role=user.Role;
+                userDTO.MobileNumber=user.MobileNumber;
+                userDTO.Email=user.Email;
+                userDTO.Password=user.Password;
+                if (userDTO != null)
+                {
+                    return userDTO;
+                }
+                else { return null; }
+                }
+                else { return null; }
+                               
         }
         
     }
